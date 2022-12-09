@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "126167408059",
+    "project_id": "dummy-shine",
+    "storage_bucket": "dummy-shine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126167408059:android:47fdfbbe3e0bafefe6b89e",
+        "android_client_info": {
+          "package_name": "com.example.navigation_attempt3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126167408059-be8mlv33kkff9444ikmoic695v508m2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQkQenUjBBlat_QIPW1H34O5246O0eOiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126167408059-be8mlv33kkff9444ikmoic695v508m2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
