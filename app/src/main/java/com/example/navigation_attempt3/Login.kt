@@ -20,7 +20,6 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
         supportActionBar?.hide()
 
         mAuth = FirebaseAuth.getInstance()
@@ -34,15 +33,13 @@ class Login : AppCompatActivity() {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
-
         btnLogin.setOnClickListener {
             val email = etEmail.text.toString()
             val password = etPassword.text.toString()
-
             login(email, password);
         }
-
     }
+
     private fun login(email: String, password: String) {
         // logic for logging in user
         mAuth.signInWithEmailAndPassword(email, password)
@@ -53,13 +50,10 @@ class Login : AppCompatActivity() {
                     val intent = Intent(this@Login, MainActivity::class.java)
                     finish()
                     startActivity(intent)
-
-
                 } else {
                     // If sign in fails, display a message to the user.
                     Toast.makeText(this@Login, "Authentication failed.",
                         Toast.LENGTH_SHORT).show()
-
                 }
             }
     }
